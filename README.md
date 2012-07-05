@@ -37,7 +37,8 @@ sh runJasmineTests.sh
 This will send the test and its dependencies to each connected browser and execute them. You can easily set up various machines running different versions of browsers
 and have them all connected to the test server. This can provide some level of automation in executing the tests in various browser environments.
  
- * Run the tests entirely headless with PhantomJS connecting to jsTestDriver. Upon completion the jsTestDriver server and phantomjs process are automatically killed:
+ * Run the tests entirely headless with PhantomJS connecting to jsTestDriver (there is an 8 second delay after starting the jsTestDriver server before connecting the PhantomJS client). 
+   Upon completion the jsTestDriver server and phantomjs process are automatically killed:
 ~~~ bash
 sh startTestAutomation.sh
 ~~~
