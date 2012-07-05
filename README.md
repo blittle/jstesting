@@ -28,7 +28,7 @@ The tests can be started multiple ways:
 
  * Start the jsTestDriver server and connect a set of browsers to it which will automatically run the tests. Start the server by executing at the root of the repo the following:
 ~~~ bash
-java -jar jsTestDriver.jar --config jsTestDriver.conf --port 9876
+sh serverInit.sh
 ~~~
 In as many browsers as you want, open the url `http://localhost:9876/capture`. Then at another command prompt, execute:
 ~~~ bash
