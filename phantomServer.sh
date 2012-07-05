@@ -7,12 +7,12 @@ COMMAND=$1
 
 command -v phantomjs >/dev/null 2>&1 || { echo "Can't find phantomjs, please make sure it's on your PATH." >&2; exit 1; }
 
-if [ ! -f "$ROOTDIR/jsTestDriver.jar" ]; then
-    echo "Cannot find jsTestDriver.jar"
+if [ ! -f "$ROOTDIR/jars/jsTestDriver.jar" ]; then
+    echo "Cannot find jars/jsTestDriver.jar"
 fi
 
-if [ ! -f "$ROOTDIR/coverage.jar" ]; then
-    echo "Cannot find coverage.jar"
+if [ ! -f "$ROOTDIR/jars/coverage.jar" ]; then
+    echo "Cannot find jars/coverage.jar"
 fi
 
 if [ ! -f "$ROOTDIR/jsTestDriver.conf" ]; then
@@ -22,7 +22,7 @@ fi
 if [[ $COMMAND == "start" ]]; then
     echo "Starting JSTD Server"
 
-    nohup java -jar $ROOTDIR/jsTestDriver.jar --verbose --captureConsole --config jsTestDriver.conf --port 9876 > $ROOTDIR/testOutputDir/jstd.out 2> $ROOTDIR/testOutputDir/jstd.err < /dev/null &
+    nohup java -jar $ROOTDIR/jars/jsTestDriver.jar --verbose --captureConsole --config jsTestDriver.conf --port 9876 > $ROOTDIR/testOutputDir/jstd.out 2> $ROOTDIR/testOutputDir/jstd.err < /dev/null &
     echo $! > $ROOTDIR/testOutputDir/jstd.pid
 
     echo "Starting PhantomJS"
