@@ -26,7 +26,7 @@ if [[ $COMMAND == "start" ]]; then
     echo $! > $ROOTDIR/testOutputDir/jstd.pid
 
     echo "Starting PhantomJS"
-
+    wait 2
     nohup phantomjs phantomjs-jstd.js > $ROOTDIR/testOutputDir/phantomjs.out 2> $ROOTDIR/testOutputDir/phantomjs.err < /dev/null &
     echo $! > $ROOTDIR/testOutputDir/phantomjs.pid
 fi
