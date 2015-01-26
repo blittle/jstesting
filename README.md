@@ -4,7 +4,7 @@ Browser-based development can sometimes be a challenge when trying utilize code 
 Add in module loading, unit testing, and automation...and things get hairy. Until the community comes to a solution, this repo
 provides a boilerplate for getting up and running with AMD and unit test automation. 
 
-Most of what is listed here is learned through painful experience at my day job (http://simplifile.com). If you know of better ways to solve these problems, please
+Most of what is listed here is learned through painful experience at my day job. If you know of better ways to solve these problems, please
 let me know!
 
 
