@@ -9,7 +9,7 @@ let me know!
 
 
 Javascript unit testing with:
-  * [Jasmine](http://pivotal.github.com/jasmine/) - Jasmine is a behavior-driven development framework for testing JavaScript code.
+  * [Jasmine](https://jasmine.github.io/) - Jasmine is a behavior-driven development framework for testing JavaScript code.
   * [RequireJS/AMD](http://requirejs.org/) - RequireJS is an AMD (asynchronus module definition) javascript file and module loader.
   * [jsTestDriver](https://code.google.com/p/js-test-driver/) - Cross-browser test automation with code coverage.
   * [PhantomJS](http://phantomjs.org/) - Headless webkit
